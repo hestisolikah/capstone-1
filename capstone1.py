@@ -46,7 +46,7 @@ def bangunan():
     if len(stockProduct) == 0 :
         print('===Tidak ada data===')
     else :
-        print('+++Daftar Bahan Bangunan di Gudang Suzume+++\n================================================')
+        print('+++Daftar Data Bahan Bangunan di Gudang Suzume+++\n================================================')
         print('Number\t| Product Name\t| Stock\t| Type\t| Price')
         for i in range(len(stockProduct)):
             print('{}\t\t| {}\t| {}\t| {}\t| {}'.format(stockProduct[i]['Number'], stockProduct[i]['Product Name'],stockProduct[i]['Stock'],stockProduct[i]['Type'],stockProduct[i]['Price']))
@@ -116,7 +116,7 @@ def update_bangunan():
             ProductName = input('Masukkan Name Product : ').capitalize()
             simpan = input('Apakah data mau diperbaharui (Y/T)?').capitalize()
             if simpan == 'Y':
-                print('\nData telah diperbaharui!\n')
+                print('\nData Terupdate!\n')
                 for j in stockProduct:
                     if j['Number'] == ProductNumber:
                         indexStock = stockProduct.index(j)
@@ -128,7 +128,7 @@ def update_bangunan():
             ProductStock = input('Masukkan Stock: ')
             simpan = input('Apakah data mau diperbaharui (Y/T)?').capitalize()
             if simpan == 'Y':
-                print('\nData telah diperbaharui!\n')
+                print('\nData Terupdate!\n')
                 for j in stockProduct:
                     if j['Number'] == ProductNumber:
                         indexStock = stockProduct.index(j)
@@ -140,7 +140,7 @@ def update_bangunan():
             ProductType = input('Masukkan Type: ').capitalize()
             simpan = input('Apakah data mau diperbaharui (Y/T)?').capitalize()
             if simpan == 'Y':
-                print('\nData telah diperbaharui!\n')
+                print('\nData Terupdate!\n')
                 for j in stockProduct:
                     if j['Number'] == ProductNumber:
                         indexStock = stockProduct.index(j)
@@ -152,7 +152,7 @@ def update_bangunan():
             ProductPrice = input('Masukkan Price: ')
             simpan = input('Apakah data mau diperbaharui (Y/T)?').capitalize()
             if simpan == 'Y':
-                print('\nData telah diperbaharui!\n')
+                print('\nData Terupdate!\n')
                 for j in stockProduct:
                     if j['Number'] == ProductNumber:
                         indexStock = stockProduct.index(j)
@@ -168,7 +168,7 @@ def update_bangunan():
             
             simpan = input('Apakah data mau diperbaharui (Y/T)?').capitalize()
             if simpan == 'Y':
-                print('\nData telah diperbaharui!\n')
+                print('\nData Terupdate!\n')
                 for j in stockProduct:
                     if j['Number'] == ProductNumber:
                         indexStock = stockProduct.index(j)
@@ -194,7 +194,7 @@ def delete_bangunan():
                     for k in stockProduct:
                         if k['Number'] == ProductNumber :
                             stockProduct.remove(k)
-                            print('===Data dihapus===')
+                            print('===Data Deleted===')
                             PunyaBarang = True
                             return
                 elif (a == 'T'):
@@ -219,7 +219,7 @@ def menu_1():
     while True :
         print('Data Bahan Bangunan di Gudang')
         print(' ')
-        print('1. Tampilkan Seluruh Daftar Bahan Bangunan')
+        print('1. Tampilkan Seluruh Daftar Data Bahan Bangunan')
         print('2. Tampilkan Data Bahan Bangunan Tertentu')
         print('3. Kembali ke Menu Utama')
         print(' ')
@@ -265,9 +265,9 @@ def menu_2():
 
 def menu_3():
      while True :
-        print('Update Bahan Bangunan di Gudang')
+        print('Update Data Bahan Bangunan di Gudang')
         print(' ')
-        print('1. Update Bahan Bangunan di Gudang')
+        print('1. Update Data Bahan Bangunan di Gudang')
         print('2. Kembali ke Menu Utama')
         MenuTiga = input('Silahkan pilih sub menu (1-2) :  ')
         if MenuTiga == '1':
@@ -281,9 +281,9 @@ def menu_3():
            
 def menu_4 ():
     while True :
-        print('Hapus Bahan Bangunan di Gudang')
+        print('Hapus Data Bahan Bangunan di Gudang')
         print(' ')
-        print('1. Hapus Bahan Bangunan di Gudang')
+        print('1. Hapus Data Bahan Bangunan di Gudang')
         print('2. Kembali ke Menu Utama')
         MenuEmpat = input('Silahkan pilih sub menu (1-2) : ')
         if(MenuEmpat == '1') :
