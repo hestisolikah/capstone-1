@@ -246,6 +246,7 @@ def bangunan_tertentu():
     PunyaBarang = False
     for i in stockProduct:
         if i['Number'] == ProductNumber :
+            print(' ')
             print(' Number\t| Product Name\t| Stock\t| Type\t| Price ')
             print(' {}\t\t| {}\t| {}\t| {}\t| {}'.format(i['Number'],i['Product Name'],i['Stock'],i['Type'],i['Price']))
             print(' ')
