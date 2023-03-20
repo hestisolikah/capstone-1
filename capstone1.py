@@ -116,6 +116,7 @@ def update_bangunan():
             ProductName = input('Masukkan Name Product : ').capitalize()
             simpan = input('Apakah data mau diperbaharui (Y/T)?').capitalize()
             if simpan == 'Y':
+                print(' ')
                 print('\nData Terupdate!\n')
                 for j in stockProduct:
                     if j['Number'] == ProductNumber:
@@ -128,6 +129,7 @@ def update_bangunan():
             ProductStock = input('Masukkan Stock: ')
             simpan = input('Apakah data mau diperbaharui (Y/T)?').capitalize()
             if simpan == 'Y':
+                print(' ')
                 print('\nData Terupdate!\n')
                 for j in stockProduct:
                     if j['Number'] == ProductNumber:
@@ -140,6 +142,7 @@ def update_bangunan():
             ProductType = input('Masukkan Type: ').capitalize()
             simpan = input('Apakah data mau diperbaharui (Y/T)?').capitalize()
             if simpan == 'Y':
+                print(' ')
                 print('\nData Terupdate!\n')
                 for j in stockProduct:
                     if j['Number'] == ProductNumber:
@@ -152,6 +155,7 @@ def update_bangunan():
             ProductPrice = input('Masukkan Price: ')
             simpan = input('Apakah data mau diperbaharui (Y/T)?').capitalize()
             if simpan == 'Y':
+                print(' ')
                 print('\nData Terupdate!\n')
                 for j in stockProduct:
                     if j['Number'] == ProductNumber:
@@ -168,6 +172,7 @@ def update_bangunan():
             
             simpan = input('Apakah data mau diperbaharui (Y/T)?').capitalize()
             if simpan == 'Y':
+                print(' ')
                 print('\nData Terupdate!\n')
                 for j in stockProduct:
                     if j['Number'] == ProductNumber:
@@ -194,12 +199,14 @@ def delete_bangunan():
                     for k in stockProduct:
                         if k['Number'] == ProductNumber :
                             stockProduct.remove(k)
+                            print(' ')
                             print('===Data Deleted===')
                             PunyaBarang = True
                             return
                 elif (a == 'T'):
                     break
     if PunyaBarang == False :
+        print(' ')
         print ('===Data yang anda cari tidak ada!===')
 
 
@@ -244,7 +251,7 @@ def bangunan_tertentu():
             print(' ')
             PunyaBarang = True
     if PunyaBarang == False :
-        print ('===Barang tidak ditemukan===')
+        print ('===Tidak Ada Data===')
 
 
 def menu_2():
