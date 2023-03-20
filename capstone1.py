@@ -204,7 +204,7 @@ def delete_bangunan():
 
 
 def show_menu():
-    print('Gudang Bahan Bangunan Suzume')
+    print('========Gudang Bahan Bangunan Suzume=======')
     print(' ')
     print('List Menu:')
     print('1. Menampilkan Daftar Bangunan')
@@ -232,8 +232,8 @@ def menu_1():
             break
         else :
             print('===Pilihan yang anda masukan salah===')
-  
-        
+
+
 def bangunan_tertentu():
     ProductNumber = input('Masukkan Product Number : ').capitalize()
     PunyaBarang = False
